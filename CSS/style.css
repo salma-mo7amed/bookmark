@@ -1,0 +1,89 @@
+
+body{
+    background-color: #F7ECDE;
+}
+.bookmarkheading{
+    border-top: 2px black dotted; 
+}
+@font-face {
+    font-family: headingfont  ;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+h1{
+    font-size: 50px;
+    font-family: headingfont;
+    
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 0;
+    bottom: 0;
+    background-color: #fec260;
+    transform: translate(120%);
+    transition: height 0.2s;
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    -ms-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    z-index: -1;
+    cursor: text;
+    -webkit-transform: translate(120%);
+    -moz-transform: translate(120%);
+    -ms-transform: translate(120%);
+    -o-transform: translate(120%);
+} 
+
+h1:hover ::after{
+    height: 70%;
+    transition:height 0.2s ease-in;       
+}
+   
+.bookmarkicon{
+    color: #3FA55B;
+}
+.bookmarkicon1{
+    color: #B1AC4A
+}
+h2{
+    font-family: headingfont;  
+}
+
+.btn{
+    margin: auto;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   width: 200px;
+    
+    
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+   
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #FEC260;
+    box-shadow: 5px solid #FEC260; 
+    outline: 3px solid #FEC260;
+
+    
+  }
+
+.tablecontent{
+    border-top: 2px black dotted;
+}
+.siteinfo{
+    border: 3px solid red;
+    
+}
