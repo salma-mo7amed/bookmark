@@ -135,7 +135,7 @@ function updateTheSite(){
 
 };
  function validateSite(){
-    var siteRegex= /^[a-z][a-z]{3-10}$/gm;
+    var siteRegex= /^[a-z][a-z]{3,10}$/gm;
     var siteInput=  siteRegex.test(siteNameInput.value);
     if(siteInput==true){
         siteNameInput.style.color="green";
@@ -152,7 +152,7 @@ function updateTheSite(){
  function validateUrl(){
     
     var urlRegex= /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
-    var urlInput=  siteRegex.test(siteUrlInput.value);
+    var urlInput=  urlRegex.test(siteUrlInput.value);
     if(urlInput==true){
         siteUrlInput.style.color="green";
         siteUrlInput.style.borderColor="green";
